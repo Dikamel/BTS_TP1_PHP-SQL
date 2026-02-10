@@ -3,6 +3,7 @@
 
 Ce projet est une petite application de gestion de stocks permettant de gérer des produits et leurs fournisseurs à l’aide d’une base de données MySQL.
 
+Lien du repo : https://github.com/Dikamel/BTS_TP1_PHP-SQL
 ---
 
 ## Utilisation de l'IA : 
