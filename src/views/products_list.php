@@ -19,6 +19,7 @@ include_once __DIR__ . '/../../templates/head.html';
                 <th>Nom</th>
                 <th>Description</th>
                 <th>Prix</th>
+                <th>Stock</th>
                 <th>Fournisseur</th>
                 <th>Actions</th>
             </tr>
@@ -29,6 +30,7 @@ include_once __DIR__ . '/../../templates/head.html';
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= htmlspecialchars($p['description'] ?? '') ?></td>
                 <td><?= htmlspecialchars($p['price']) ?> €</td>
+                <td><?= $p['stock'] ?? 'N/A'?></td>
                 <td><?= htmlspecialchars($p['supplier'] ?? '') ?></td>
                 <td>
                     <a class="btn btn-sm btn-primary" href="index.php?action=form&id=<?= $p['id_product'] ?>">Modifier</a>

@@ -37,11 +37,19 @@ include_once __DIR__ . '/../../templates/head.html';
         <div class="m-3">
             <div class="col-5">
                 <label for="prix" class="form-label">Prix : *</label>
-                <input type="number" id="prix" class="form-control" step="0.01" name="prix" value="<?= $produit['price']
+                <input type="number" id="prix" min="0" class="form-control" step="0.01" name="prix" value="<?= $produit['price']
                                                                                                         ?? '' ?>" required>
             </div>
         </div>
 
+        <!-- Stock -->
+        <div class="m-3">
+            <div class="col-5">
+                <label for="stock" class="form-label">Stock : </label>
+                <input type="number" id="stock" class="form-control" step="1" min="0" name="stock" value="<?= $produit['stock']
+                                                                                                        ?? '' ?>" required>
+            </div>
+        </div>
 
         <!-- Fournisseur -->
         <div class="m-3">
